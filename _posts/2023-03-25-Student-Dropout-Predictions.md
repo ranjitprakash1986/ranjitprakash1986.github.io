@@ -2,6 +2,8 @@
 layout: post
 title: Predicting Student Dropout
 subtitle: Using ML algorithms to predict student dropout from college
+gh-repo: ranjitprakash1986/dropout_predictions
+gh-badge: [star, fork, follow]
 cover-img: /assets/img/banner-dark.jpg
 thumbnail-img: /assets/img/student-thumb.jpg
 share-img: /assets/img/path.jpg

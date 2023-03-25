@@ -4,7 +4,9 @@ title: NYC Airbnb Popularity Predictor
 subtitle: Helping Airbnb hosts and renters through Data Science
 gh-repo: ranjitprakash1986/NYC_Airbnb_popularity
 gh-badge: [star, fork, follow]
-tags: [Airbnb, ]
+cover-img: /assets/img/banner-dark.jpg
+thumbnail-img: /assets/img/housing.jpg
+tags: [Airbnb, LGBM, Prediction]
 comments: true
 ---
 ## Summary

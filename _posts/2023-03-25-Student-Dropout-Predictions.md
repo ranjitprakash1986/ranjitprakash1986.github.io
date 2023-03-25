@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Predicting Student Dropout
-subtitle: Determing factors that influence student dropout from college
+subtitle: Using ML algorithms to predict student dropout from college
 cover-img: /assets/img/banner-dark.jpg
 thumbnail-img: /assets/img/student-thumb.jpg
 share-img: /assets/img/path.jpg

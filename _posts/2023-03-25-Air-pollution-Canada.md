@@ -4,7 +4,7 @@ title: Trends in Air Pollution in Canada
 subtitle: Dashboard created in Shiny R
 cover-img: /assets/img/banner-dark.jpg
 thumbnail-img: /assets/img/pollution-skyline-canada.jpg
-tags: [Dashboard, Dash, R]
+tags: [Dashboard, Shiny, R]
 comments: true
 ---
 

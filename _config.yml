@@ -22,8 +22,8 @@ author: Ranjitprakash Sundaramurthi
 navbar-links:
   About Me: "aboutme"
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
+    - Portfolio: "https://beautifuljekyll.com"
+    - Blog: "https://www.markdowntutorial.com/"
   Author's home: "https://deanattali.com"
 
 ################

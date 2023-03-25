@@ -21,10 +21,10 @@ author: Ranjitprakash Sundaramurthi
 
 navbar-links:
   About Me: "aboutme"
-  Resources:
-    - Portfolio: "https://beautifuljekyll.com"
-    - Blog: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  Connect:
+    - LinkedIn: "https://www.linkedin.com/in/ranjitprakash-sundaramurthi/"
+    - Blog: "https://medium.com/@ranjitprakash1986"
+  # Online CV: "TBD"
 
 ################
 # --- Logo --- #

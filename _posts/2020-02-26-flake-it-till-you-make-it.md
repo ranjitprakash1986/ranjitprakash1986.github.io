@@ -1,17 +1,36 @@
 ---
 layout: post
-title: Flake it till you make it
-subtitle: Excerpt from Soulshaping by Jeff Brown
+title: Predicting Student Dropout
+subtitle: Determing factors that influence student dropout from college
 cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
+thumbnail-img: /assets/img/student-thumb.jpg
 share-img: /assets/img/path.jpg
-tags: [books, test]
+tags: [Prediction, Classification]
 ---
+### Introduction
 
-Under what circumstances should we step off a path? When is it essential that we finish what we start? If I bought a bag of peanuts and had an allergic reaction, no one would fault me if I threw it out. If I ended a relationship with a woman who hit me, no one would say that I had a commitment problem. But if I walk away from a seemingly secure route because my soul has other ideas, I am a flake?
+Academic performance/graduation in a population is an important factor in their overall employability which contributes towards economic development. This Data Science project predicts Student Dropout given the factors on demography, socioeconomics, macroeconomics, and relevant academic data provided by the Student on enrollment. This prediction is important to understand the student's academic capacity. This important knowledge can be used to identify key areas of development such as the development of socially disadvantaged communities, improvement of academic programs, development of educational funding programs, etc. This project will try to investigate the following research question:
 
-The truth is that no one else can definitively know the path we are here to walk. It’s tempting to listen—many of us long for the omnipotent other—but unless they are genuine psychic intuitives, they can’t know. All others can know is their own truth, and if they’ve actually done the work to excavate it, they will have the good sense to know that they cannot genuinely know anyone else’s. Only soul knows the path it is here to walk. Since you are the only one living in your temple, only you can know its scriptures and interpretive structure.
+>Given a student with his/her demography, socioeconomics, macroeconomics, >and relevant academic data, how accurately can we predict whether he/she >will drop out of school?
 
-At the heart of the struggle are two very different ideas of success—survival-driven and soul-driven. For survivalists, success is security, pragmatism, power over others. Success is the absence of material suffering, the nourishing of the soul be damned. It is an odd and ironic thing that most of the material power in our world often resides in the hands of younger souls. Still working in the egoic and material realms, they love the sensations of power and focus most of their energy on accumulation. Older souls tend not to be as materially driven. They have already played the worldly game in previous lives and they search for more subtle shades of meaning in this one—authentication rather than accumulation. They are often ignored by the culture at large, although they really are the truest warriors.
+For complete information, code and report, please visit this [repository](https://github.com/ranjitprakash1986/dropout_predictions)
 
-A soulful notion of success rests on the actualization of our innate image. Success is simply the completion of a soul step, however unsightly it may be. We have finished what we started when the lesson is learned. What a fear-based culture calls a wonderful opportunity may be fruitless and misguided for the soul. Staying in a passionless relationship may satisfy our need for comfort, but it may stifle the soul. Becoming a famous lawyer is only worthwhile if the soul demands it. It is an essential failure if you are called to be a monastic this time around. If you need to explore and abandon ten careers in order to stretch your soul toward its innate image, then so be it. Flake it till you make it.
+### Data
+
+The dataset used in the project contains data collected at the time of student enrollment and a snapshot of their performance at the end of the 2nd semester at their respective Universities. This includes discrete and continuous data that capture the various facets of the student. These include macroeconomic factors of inflation, GDP, and the unemployment rate. It covers the personal/family details of the student such as gender, previous grade, educational special needs, financial status, parents’ education, and parents’ occupation. It captures aspects of the educational system such as coursework enrolled, day/evening classes, scholarships offered, etc. The dataset is created by Valentim Realinho, Mónica Vieira Martins, Jorge Machado, and Luís Baptista from the Polytechnic Institue of Portalegre. It was sourced from the UCI Machine Learning Repository and can be downloaded from here. Each row represents the details pertaining to an individual student and there are no duplicates.
+
+The original dataset exhibits three classifications (class) of students - Graduate, Enrolled, and Dropout. For the binary classification question pursued in this project, the class Enrolled is omitted from the dataset. The preliminary EDA shows there are 2209 examples of Graduate students and 1421 examples of Dropouts. Thus the dataset imbalance is not a major concern and can be addressed through balancing techniques learned in the MDS program.
+
+### Results
+
+The objective of this project is to investigate how accurately we can predict that a student will drop out of school. Furthermore what underlying factors are the predominant influencing this outcome? Accurate classification of a true drop out in the available data is our chosen metric of interest. This is defined as Recall and it represents the proportion of the true drop-outs in the dataset, accurately predicted by the model. Each of the three models Naive Bayes, Logistic Regression and Random Forest Classifier were fitted on training data. The hyperparameter tuning was performed on using Random Search CV for Logistic Regression and Random Forest Classifier. The optimized models were then used to predict the classification on the test data. The performance of the models was compared through the Confusion Matrix, Precision-Recall curve, and Receive-Operating Characteristics plots. The metrics were tabulated for numerical interpretation.
+
+![Precision_Recall_table](..assets/img/precision_recall_table_dropout_prediction.png)
+
+Our train-test split yielded 726 examples in the testing dataset. There are 425 actual class Dropout and the rest are Graduate. The classification as a Dropout is considered as a Positive in the context of this project. The Logistic Regression model identified the highest True positives among the three models (386) and achieved a superior recall metric of 0.83. Naive Bayes model came close behind with 400 true positives at a recall metric of 0.66. The Random Forest model achieved an appreciable recall metric of 0.8 with 403 true positive. Overall, the Logistic Regression model result in the highest recall score (0.83) and since we focus on the recall score (those who drop out of school), therefore, we conclude that the Logistic Regression model perform the best in terms of recall.
+
+The Random Forest Classifier and Logistic Regression performed appreciably on the f1 score which is a balanced measure of model precision and recall. However Naive Bayes suffered a relative low f1 score due to a low precision. This is due to more False Positives predicted by Naive Bayes than the other models. The corresponding confusion matrices derived from the analysis are shown below for reference.
+
+![Precision_Recall_Curve](..assets/img/PR_curve_dropout_prediction.png)
+
+![Precision_Recall_Curve](..assets/img/ROC_curve_dropout_prediction.png)

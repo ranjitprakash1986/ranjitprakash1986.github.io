@@ -11,7 +11,7 @@ tags: [Prediction, Classification]
 
 Academic performance/graduation in a population is an important factor in their overall employability which contributes towards economic development. This Data Science project predicts Student Dropout given the factors on demography, socioeconomics, macroeconomics, and relevant academic data provided by the Student on enrollment. This prediction is important to understand the student's academic capacity. This important knowledge can be used to identify key areas of development such as the development of socially disadvantaged communities, improvement of academic programs, development of educational funding programs, etc. This project will try to investigate the following research question:
 
->Given a student with his/her demography, socioeconomics, macroeconomics, >and relevant academic data, how accurately can we predict whether he/she >will drop out of school?
+>Given a student with his/her demography, socioeconomics, macroeconomics, and relevant academic data, how accurately can we predict whether he/she will drop out of school?
 
 For complete information, code and report, please visit this [repository](https://github.com/ranjitprakash1986/dropout_predictions)
 
@@ -34,3 +34,9 @@ The Random Forest Classifier and Logistic Regression performed appreciably on th
 ![Precision_Recall_Curve](../assets/img/PR_curve_dropout_prediction.png)
 
 ![Precision_Recall_Curve](../assets/img/ROC_curve_dropout_prediction.png)
+
+The correlation plot between the factors and the target objective reveals some that female students with Debts have a high possibility of dropping out of school.
+
+![correlation_dropout_prediction](../assets/img/correlation_dropout_prediction.png)
+
+This project was completed in accordance to the requirements in the MDS program 2022-2023. If you have any questions, please feel free to connect with me at my social media handles.

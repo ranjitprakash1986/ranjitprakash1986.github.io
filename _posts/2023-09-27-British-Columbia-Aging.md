@@ -57,6 +57,6 @@ The analysis assumes a linear relationship between demographic shifts and econom
 Addressing the complexities of this issue requires a holistic approach that considers qualitative data, stakeholder perspectives, and a nuanced understanding of the societal and economic forces at play.
 
 ### Sources:
-* ![Provincial Voter Participation by Age Group:](https://catalogue.data.gov.bc.ca/dataset/provincial-voter-participation-by-age-group)
+* ![Provincial Voter Participation by Age Group](https://catalogue.data.gov.bc.ca/dataset/provincial-voter-participation-by-age-group)
 * ![BC Population projections](https://catalogue.data.gov.bc.ca/dataset/bc-population-projections)
 * ![Health Expenditure trends](https://www.cihi.ca/en/national-health-expenditure-trends)

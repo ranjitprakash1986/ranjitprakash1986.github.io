@@ -70,7 +70,7 @@ layout: page
 
       <div class="post-entry">
         {% assign min_paragraph_length = 150 %}
-        {% assign paragraphs = post.excerpt | split:'</p>' %}
+        {% assign paragraphs = post.content | split:'</p>' %}
         {% assign excerpt_length = 0 %}
         {% for paragraph in paragraphs %}
             {% if excerpt_length < min_paragraph_length %}
@@ -81,7 +81,7 @@ layout: page
         {% endfor %}
 
         {% if excerpt_length < min_paragraph_length %}
-            {{ post.excerpt | strip_html }}
+            {{ post.content | strip_html | truncate: min_paragraph_length, '...' }}
         {% endif %}
 
           {% assign excerpt_word_count = post.excerpt | number_of_words %}

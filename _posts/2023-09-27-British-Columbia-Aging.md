@@ -26,7 +26,7 @@ Dependency, in the context of demographics, refers to the state of relying on or
 Among the dependent population, children represent an investment in the future. However, they necessitate substantial expenditures on their upbringing such as education and healthcare, which are essential for the future economy.
 
 #### The Challenge of Elderly Dependents
-Conversely, elderly dependents bring wisdom, are a guide for the younger generation, but pose challenges for the future. They require expenditure on healthcare and pension provisions. The ![dashboard](https://public.tableau.com/app/profile/ranjit.sundaramurthi/viz/BCAgingInsights/Dashboard1) shows a dependency ratio trend of concern: the ratio of elderly dependents is surpasses that of children. By 2041 (forecasted), a staggering 73% of British Columbia's population is projected to be dependent, with 45% being elderly individuals.
+Conversely, elderly dependents bring wisdom, are a guide for the younger generation, but pose challenges for the future. They require expenditure on healthcare and pension provisions. The [dashboard](https://public.tableau.com/app/profile/ranjit.sundaramurthi/viz/BCAgingInsights/Dashboard1) shows a dependency ratio trend of concern: the ratio of elderly dependents is surpasses that of children. By 2041 (forecasted), a staggering 73% of British Columbia's population is projected to be dependent, with 45% being elderly individuals.
 
 ### The Economic Impact of an Aging Population
 
@@ -57,6 +57,7 @@ The analysis assumes a linear relationship between demographic shifts and econom
 Addressing the complexities of this issue requires a holistic approach that considers qualitative data, stakeholder perspectives, and a nuanced understanding of the societal and economic forces at play.
 
 ### Sources:
-* ![Provincial Voter Participation by Age Group](https://catalogue.data.gov.bc.ca/dataset/provincial-voter-participation-by-age-group)
-* ![BC Population projections](https://catalogue.data.gov.bc.ca/dataset/bc-population-projections)
-* ![Health Expenditure trends](https://www.cihi.ca/en/national-health-expenditure-trends)
+* [Github repository](https://github.com/ranjitprakash1986/bc_aging_insights)
+* [Provincial Voter Participation by Age Group](https://catalogue.data.gov.bc.ca/dataset/provincial-voter-participation-by-age-group)
+* [BC Population projections](https://catalogue.data.gov.bc.ca/dataset/bc-population-projections)
+* [Health Expenditure trends](https://www.cihi.ca/en/national-health-expenditure-trends)

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exploring NYC Airbnb Listings: Predicting Popularity
+title: Exploring NYC Airbnb Listings - Predicting Popularity
 subtitle: Helping Airbnb hosts and renters through Data Science
 gh-repo: ranjitprakash1986/NYC_Airbnb_popularity
 gh-badge: [star, fork, follow]

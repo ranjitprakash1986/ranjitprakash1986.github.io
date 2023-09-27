@@ -69,13 +69,26 @@ layout: page
       {% endif %}
 
       <div class="post-entry">
-        {% assign excerpt_length = site.excerpt_length | default: 100 %}
-        {{ post.excerpt | strip_html | truncatewords: excerpt_length }}
-        {% assign excerpt_word_count = post.excerpt | number_of_words %}
-        {% if post.content != post.excerpt or excerpt_word_count > excerpt_length %}
-          <a href="{{ post.url | absolute_url }}" class="post-read-more">[Read&nbsp;More]</a>
+        {% assign min_paragraph_length = 150 %}
+        {% assign paragraphs = post.excerpt | split:'</p>' %}
+        {% assign excerpt_length = 0 %}
+        {% for paragraph in paragraphs %}
+            {% if excerpt_length < min_paragraph_length %}
+                {{ paragraph | append: '</p>' }}
+                {% capture temp_excerpt %}{{ paragraph | append: '</p>' }}{% endcapture %}
+                {% assign excerpt_length = temp_excerpt | size %}
+            {% endif %}
+        {% endfor %}
+
+        {% if excerpt_length < min_paragraph_length %}
+            {{ post.excerpt | strip_html }}
         {% endif %}
-      </div>
+
+          {% assign excerpt_word_count = post.excerpt | number_of_words %}
+          {% if post.content != post.excerpt or excerpt_word_count > excerpt_length %}
+            <a href="{{ post.url | absolute_url }}" class="post-read-more">[Read&nbsp;More]</a>
+          {% endif %}
+        </div>
       {% endunless %}
 
       {% if site.feed_show_tags != false and post.tags.size > 0 %}

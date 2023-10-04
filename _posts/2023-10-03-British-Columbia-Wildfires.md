@@ -27,10 +27,3 @@ From 2017 onward, the area burnt by wildfires in British Columbia spiked dramati
 This analysis is an over simplified overview of wildfires and its possible drivers. It is highly likely that several factors, not included in this assessment play a major part in driving wildfires. These include the extent of vegetation, the type of vegetation, localized weather metrics rather that provincial averages and several others. I do not claim to be an expert in this domain, however found it interesting to explore myself.
 
 Note: The precipitation data is until 2017, wind speed data is until 2014, while the ongoing 2023 wildfire season is not fully updated.
-
-
-### Sources:
-* [Github repository](https://github.com/ranjitprakash1986/bc_aging_insights)
-* [Provincial Voter Participation by Age Group](https://catalogue.data.gov.bc.ca/dataset/provincial-voter-participation-by-age-group)
-* [BC Population projections](https://catalogue.data.gov.bc.ca/dataset/bc-population-projections)
-* [Health Expenditure trends](https://www.cihi.ca/en/national-health-expenditure-trends)
